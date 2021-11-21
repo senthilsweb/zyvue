@@ -1,0 +1,15 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+@font-face {
+    font-family: Flow;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://tailwindcss.com/_next/static/media/flow-circular.853ff76f08786ae44ca0f167cac8bbe5.woff)
+      format("woff");
+  }
+  .font-flow {
+    font-family: Flow;
+  }

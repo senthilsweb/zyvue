@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    <form name="Contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden netlify>
+        <input type="text" name="first_name" id="first_name" autocomplete="first_name" >
+        <input  type="text" name="last_name" autocomplete="last_name" >
+        <input type="text"  name="company" autocomplete="company" >
+        <input type="text" name="email" autocomplete="email" >
+        <input type="text" name="phone_number" id="phone_number" autocomplete="phone_number">
+        <textarea name="description" rows="3"></textarea>
+        <input type="text" name="product" autocomplete="product" >
+   </form>
+  {{ APP }}
+</body>
+</html>

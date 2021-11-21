@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  web.frontend.zyvue:
+    networks:
+      - frontend
+    image: web.frontend.zyvue
+    container_name: web.frontend.zyvue
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "5000:80"
+    environment:
+      - REST_ENDPOINT=http://localhost:1337/api/
+networks:
+  frontend:
+  backend:
