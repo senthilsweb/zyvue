@@ -35,7 +35,7 @@ var (
 
 func init() {
 	log.Info("Application init function start")
-	flag.IntVar(&flagPort, "p", 8080, "port number to use for web ui server")
+	flag.IntVar(&flagPort, "p", 3000, "port number to use for web ui server")
 	flag.StringVar(&flagStaticDirPath, "d", "./dist", "Website directory path")
 	flag.StringVar(&flagIndexFileName, "f", "index.html", "Index document")
 	flag.StringVar(&flagEnv, "e", "dev", "Development or Production stage")
