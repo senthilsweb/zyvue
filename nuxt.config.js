@@ -73,7 +73,7 @@ export default {
   ],
   router: {
     middleware: 'layoutMiddleware',
-    trailingSlash: false
+    trailingSlash: true
   },
   /*
   ** Nuxt.js dev-modules
