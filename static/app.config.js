@@ -1,1 +1,1 @@
-const REST_ENDPOINT = 'http://localhost:2222/api/'
+const REST_ENDPOINT = 'http://notifier-api-service:3000/api/'
