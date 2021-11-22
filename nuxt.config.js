@@ -72,8 +72,7 @@ export default {
     '~/plugins/global.js'
   ],
   router: {
-    middleware: 'layoutMiddleware',
-    trailingSlash: true
+    middleware: 'layoutMiddleware'
   },
   /*
   ** Nuxt.js dev-modules
