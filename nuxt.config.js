@@ -23,7 +23,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }
     ],
     script: [
       { hid: 'ustr', src: 'https://cdnjs.cloudflare.com/ajax/libs/underscore.string/3.3.5/underscore.string.js', defer: true },
@@ -124,7 +124,7 @@ export default {
     proxy: false
   },
   googleAnalytics: {
-    id:'UA-207352335-2'
+    id: 'UA-207352335-2'
     //propertyid : 286077743
   },
   toast: {
@@ -170,7 +170,8 @@ export default {
     baseURL: process.env.BASE_URL || '',
     appLogo: process.env.APP_LOGO || 'logo.svg',
     bizAddress: process.env.BIZ_ADDRESS || 'NA',
-    apiURL: process.env.REST_ENDPOINT || 'https://api.zyvue.com',
+    apiURL: process.env.REST_END_POINT || 'https://api.zynomi.com',
+    restEndPoint: process.env.REST_END_POINT || 'http://18.189.3.157:1337',
   },
   privateRuntimeConfig: {
     apiSecret: process.env.API_SECRET
