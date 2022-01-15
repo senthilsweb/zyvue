@@ -25,7 +25,7 @@ RUN go mod download
 COPY --from=build-stage /app/main.go .
 
 # Set necessary environmet variables needed for the image and build the server.
-ENV CGO_ENABLED=0 GOOS=linux GOARCH=amd64
+ENV CGO_ENABLED=0 GOOS=linux GOARCH=arm64
 
 # Run go build (with ldflags to reduce binary size).
 RUN go build -ldflags="-s -w" -o zyvue .
