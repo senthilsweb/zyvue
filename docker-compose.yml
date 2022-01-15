@@ -12,5 +12,6 @@ services:
       - "5000:3000"
     environment:
       - REST_ENDPOINT="http://18.189.3.157:1337/api"
+      - API_KEY=
 networks:
-  frontend:
+  frontend: null
