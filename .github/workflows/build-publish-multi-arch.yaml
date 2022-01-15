@@ -53,6 +53,11 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      
+      - name: Another step
+        run: |
+          echo "Branch: ${{ steps.vars.outputs.branch }}"
+          echo "Sha: ${{ steps.vars.outputs.sha_short }}"
 
       - name: Build
         uses: docker/build-push-action@v2
@@ -62,4 +67,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64,linux/ppc64le
           push: true
-          tags: ${{ steps.prep.outputs.tags }}
+          tags: latest,${{ steps.vars.outputs.sha_short }}
